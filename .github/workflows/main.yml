@@ -31,5 +31,5 @@ jobs:
           Get-ChildItem -Path . -Exclude deploy,venv | Move-Item -Destination deploy
           cd deploy
           ..\venv\Scripts\activate
-          nuitka  --follow-importas mesh_receiver.py
+          nuitka  --follow-imports mesh_receiver.py
           
